@@ -5,7 +5,7 @@
 
 rm(list = ls())
 #read file
-setwd("C:/Users/Jerry Li/Desktop/Project")
+setwd("~/Desktop/Project")
 Data1 = read.csv(file = "./Raw Data/tmdb_5000_credits.csv")
 Data2 = read.csv(file = "./Raw Data/tmdb_5000_movies.csv")
 
@@ -35,7 +35,7 @@ data_cluster = scale(data_cluster)
 sum(is.na(data))
 
 #output data
-setwd("C:/Users/Jerry Li/Desktop/Project/Processed Data")
+setwd("~/Desktop/Project/Processed Data")
 write.csv(data, 'movieData.csv')
 write.csv(data_cluster, 'clusteringData.csv')
 
